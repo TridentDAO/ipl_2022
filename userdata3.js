@@ -1,4 +1,9 @@
 var db = firebase.firestore();
+
+
+window.onload = function() {
+  DisplayData();
+};
 function DisplayData() {
   let count = 1;
   db.collection("IPL2022_V3")
